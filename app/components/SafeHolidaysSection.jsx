@@ -4,12 +4,12 @@ const commitments = [
   {
     title: "Comfortable Stays",
     description: "Relax in clean, cozy, and well-equipped accommodations throughout your trip.",
-    image: "/Comfortable Stays.png",
+    image: "/Comfortable Stays.webp",
   },
   {
     title: "Hygienic Dining Options",
     description: "Enjoy delicious meals prepared and served with top hygiene standards.",
-    image: "/Hygienic Dining Options.png",
+    image: "/Hygienic Dining Options.webp",
   },
   {
     title: "Safe & Reliable Transfers",

@@ -26,12 +26,12 @@ const destinations = [
   {
     title: "Dubai",
     activities: "405 activities",
-    image: "/DubaiImg.png",
+    image: "/DubaiImg.webp",
   },
   {
     title: "Europe",
     activities: "800+ activities",
-    image: "/europeImg.png",
+    image: "/europeImg.webp",
   },
   {
     title: "Turkey",
@@ -41,7 +41,7 @@ const destinations = [
   {
     title: "Africa",
     activities: "500 activities",
-    image: "/AfricaImg.png",
+    image: "/AfricaImg.webp",
   }
 ];
 

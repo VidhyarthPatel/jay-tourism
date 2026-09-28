@@ -1,17 +1,28 @@
 import Image from "next/image";
-import { forwardRef } from "react";
+import { forwardRef, useState, useEffect } from "react";
 import TextAnimation from "./TextAnimation";
 import AnimatedButton from "./AnimatedButton";
 
 const HeroSection = forwardRef((props, ref) => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col hero-bg relative" ref={ref}>
       {/* Mobile-only gradient overlay for readability */}
       <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/50 to-transparent sm:hidden z-0 pointer-events-none"></div>
 
       {/* Header */}
-      <header className="flex items-center justify-between px-4 sm:px-6 lg:px-8 max-w-[1600px] mx-auto py-6 w-full z-10 relative">
-        <div className="flex items-center">
+      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-white/90 backdrop-blur-md shadow-sm py-3" : "bg-transparent py-6"}`}>
+        <div className="flex items-center justify-between px-4 sm:px-6 lg:px-8 max-w-[1600px] mx-auto w-full">
+          <div className="flex items-center">
           <Image
             src="/logo.png"
             alt="Jay Tours & Travels Logo"
@@ -41,10 +52,11 @@ const HeroSection = forwardRef((props, ref) => {
             <div className="w-6 h-[2px] bg-gray-800 rounded-full"></div>
           </button>
         </div>
+        </div>
       </header>
 
       {/* Main Content */}
-      <main className="flex-1 flex flex-col justify-start md:justify-center px-4 sm:px-6 lg:px-8 max-w-[1600px] mx-auto w-full z-10 relative pb-56 md:pb-80 pt-8 md:pt-0">
+      <main className="flex-1 flex flex-col justify-start md:justify-center px-4 sm:px-6 lg:px-8 max-w-[1600px] mx-auto w-full z-10 relative pb-56 md:pb-80 pt-28 md:pt-20">
         <div className="w-full max-w-[750px]">
           {/* Tagline */}
           <div className="inline-flex items-center gap-2 bg-[#f4f1fa] px-4 py-2 rounded-full text-[#5f39c2] font-bold text-[11px] mb-4 md:mb-8 tracking-widest uppercase">

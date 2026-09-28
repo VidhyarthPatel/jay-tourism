@@ -4,22 +4,22 @@ const features = [
   {
     title: "Best Assured Budget Pricing",
     description: "Unbeatable budget friendly tour packages, guaranteed quality. Affordable, remarkable travel experiences. Your go-to choice for unforgettable journeys.",
-    icon: "/Budget Pricing icon.png",
+    icon: "/Budget Pricing icon.webp",
   },
   {
     title: "24x7 Travel Assistance",
     description: "24/7 dedicated travel experts crafting precise itineraries for your ideal North East India experience.",
-    icon: "/24:7 support icon.png",
+    icon: "/24_7 support icon.webp",
   },
   {
     title: "Easy & Customized Booking",
     description: "Effortlessly plan your dream vacation with our easy and customized booking options.",
-    icon: "/Easy & Customized Booking.png",
+    icon: "/Easy & Customized Booking.webp",
   },
   {
     title: "Best Deal Package",
     description: "We provide the best deal ever, save big with our best offer yet! Limited time only",
-    icon: "/Best Deal Package.png",
+    icon: "/Best Deal Package.webp",
   },
   {
     title: "Rewards Points",

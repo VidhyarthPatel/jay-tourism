@@ -5,7 +5,7 @@ export default function CTASection() {
     <section className="relative w-full h-[450px] md:h-[500px] lg:h-[600px] flex items-center overflow-hidden">
       {/* Background Image */}
       <div 
-        className="absolute inset-0 w-full h-full bg-[url('/CTABg.png')] bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 w-full h-full bg-[url('/CTABg.webp')] bg-cover bg-center bg-no-repeat"
         aria-hidden="true"
       />
       
